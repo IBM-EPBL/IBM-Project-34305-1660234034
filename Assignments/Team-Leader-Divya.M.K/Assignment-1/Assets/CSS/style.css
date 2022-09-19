@@ -1,27 +1,27 @@
-/===== GOOGLE FONTS =====/
+/*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-/===== VARIABLES CSS =====/
+/*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
   --font-semi: 600;
-  /===== Colores =====/
-  /Purple 260 - Red 355 - Blue 224 - Pink 340/
+  /*===== Colores =====*/
+  /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
   --hue-color: 224;
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
-  /===== Fuente y tipografia =====/
+  /*===== Fuente y tipografia =====*/
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
   --smaller-font-size: .75rem;
-  /===== Margenes =====/
+  /*===== Margenes =====*/
   --mb-2: 1rem;
   --mb-4: 2rem;
   --mb-5: 2.5rem;
   --mb-6: 3rem;
-  /===== z index =====/
+  /*===== z index =====*/
   --z-back: -10;
   --z-fixed: 100;
 }
@@ -35,7 +35,7 @@
   }
 }
 
-/===== BASE =====/
+/*===== BASE =====*/
 *, ::before, ::after {
   box-sizing: border-box;
 }
@@ -98,7 +98,7 @@ img {
   padding-bottom: 2rem;
 }
 
-/===== LAYOUT =====/
+/*===== LAYOUT =====*/
 .bd-grid {
   max-width: 1024px;
   display: grid;
@@ -116,7 +116,7 @@ img {
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
-/===== NAV =====/
+/*===== NAV =====*/
 .nav {
   height: var(--header-height);
   display: flex;
@@ -171,7 +171,7 @@ img {
   cursor: pointer;
 }
 
-/Active menu/
+/*Active menu*/
 .active::after {
   position: absolute;
   content: '';
@@ -182,12 +182,12 @@ img {
   background-color: var(--first-color);
 }
 
-/=== Show menu ===/
+/*=== Show menu ===*/
 .show {
   right: 0;
 }
 
-/===== HOME =====/
+/*===== HOME =====*/
 .home {
   position: relative;
   row-gap: 5rem;
@@ -238,7 +238,7 @@ img {
     width: 360px;
   }
   
-  /BUTTONS/
+  /*BUTTONS*/
   .button {
     display: inline-block;
     background-color: var(--first-color);
@@ -528,4 +528,3 @@ img {
       width: 450px;
     }
   }
-  
