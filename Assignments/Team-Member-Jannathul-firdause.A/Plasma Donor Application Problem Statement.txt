@@ -1,0 +1,11 @@
+1.With rapid increase in the usage of social networks sites across the world, there is also a steady increase in blood donation   requests as being noticed in the number of posts on these sites such as Facebook and twitter seeking blood donors.
+2.Finding blood donor is a challenging issue in almost every country. 
+3.There are some blood donor finder applications in the market such as Blood app by Red Cross and Blood Donor Finder application by   Neologix. 
+4.However, more reliable applications that meet the needs of users are prompted.
+5.Conventionally, when a patient needs blood, he/she has to contact a blood bank or a compatible blood group of a donor in their   circle, family, and friends. 
+6.However, it is difficult to find suitable donor within a limited group of people in a given time. 
+7.In addition, there is no guarantee that blood banks will have compatible blood group in stock. 
+8.There is also steady increase in blood donation requests posts in social networking sites (like Facebook, twitter, Instagram, etc.)   requesting for donation.
+9.The donor can register their blood group and contact details in the application.
+10.Then the user can select the required group and will have the details of the donor to contact.
+11.The cloud storage will be used here for the storage of the credentials.
