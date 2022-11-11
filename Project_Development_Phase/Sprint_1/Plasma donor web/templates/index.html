@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Plasma Donor Application</title>
+
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/bootstrap-icons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/bootstrap.min.css') }}">
+
+</head>
+
+<body id="section_1">
+
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8 col-12 d-flex flex-wrap">
+                    <p class="d-flex me-4 mb-0">
+                        <i class="bi-geo-alt me-2"></i>
+                        Chennai, India.
+                    </p>
+
+                    <p class="d-flex mb-0">
+                        <i class="bi-envelope me-2"></i>
+
+                        <a href="mailto:info@company.com">
+                            info@company.com
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">
+                    <ul class="social-icon">
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-twitter"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-facebook"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-instagram"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-youtube"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-whatsapp"></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+        <div class="container">
+            <a class="navbar-brand" href="/home">
+
+                <img src="{{ url_for('static', filename= 'images/logo.png') }}" class="logo img-fluid" alt="Plasma Donor Logo">
+                <span>
+                    Plasma Donor Platform
+                    <small>Non-profit Organization</small>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#top">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_2">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_4">Register</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_6">Contact</a>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link custom-btn custom-border-btn btn" href="/login">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="hero-section hero-section-full-height">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 p-0">
+                        <div id="hero-slide" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="{{ url_for('static', filename= 'images/slide/volunteer-helping-with-donation-box.jpg') }}"
+                                        class="carousel-image img-fluid" alt="...">
+
+                                    <div class="carousel-caption d-flex flex-column justify-content-end">
+                                        <h1>be a Kind Heart</h1>
+
+                                        <p>Volunteer charity </p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="{{ url_for('static', filename= 'images/slide/volunteer-selecting-organizing-clothes-donations-charity.jpg') }}"
+                                        class="carousel-image img-fluid" alt="...">
+
+                                    <div class="carousel-caption d-flex flex-column justify-content-end">
+                                        <h1>Non-profit</h1>
+
+                                        <p>You can support us to grow more</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    
+                                    <img src="{{ url_for('static', filename= 'images/slide/medium-shot-people-collecting-donations.jpg') }}"
+                                        class="carousel-image img-fluid" alt="...">
+
+                                    <div class="carousel-caption d-flex flex-column justify-content-end">
+                                        <h1>Humanity</h1>
+
+                                        <p>Please tell your friends about our website</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#hero-slide"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+
+                            <button class="carousel-control-next" type="button" data-bs-target="#hero-slide"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-10 col-12 text-center mx-auto">
+                        <h2 class="mb-5">Welcome to Plasma Donation</h2>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                        <div class="featured-block d-flex justify-content-center align-items-center">
+                            <a href="#" class="d-block">
+                                
+                                <img src="{{ url_for('static', filename= 'images/icons/hands.png') }}" class="featured-block-image img-fluid" alt="">
+
+                                <p class="featured-block-text">Become a <strong>Volunteer</strong></p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+                        <div class="featured-block d-flex justify-content-center align-items-center">
+                            <a href="#" class="d-block">
+                                <img src="{{ url_for('static', filename= 'images/icons/heart.png') }}" class="featured-block-image img-fluid" alt="">
+
+                                <p class="featured-block-text"><strong>Caring</strong> Earth</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+                        <div class="featured-block d-flex justify-content-center align-items-center">
+                            <a href="#" class="d-block">
+                                <img src="{{ url_for('static', filename= 'images/icons/receive.png') }}" class="featured-block-image img-fluid" alt="">
+
+                                <p class="featured-block-text">Make a <strong>Donation</strong></p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                        <div class="featured-block d-flex justify-content-center align-items-center">
+                            <a href="#" class="d-block">
+                                <img src="{{ url_for('static', filename= 'images/icons/scholarship.png') }}" class="featured-block-image img-fluid" alt="">
+
+                                <p class="featured-block-text"><strong>Non-Profit</strong> Program</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding section-bg" id="section_2">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                        <img src="{{ url_for('static', filename= 'images/group-people-volunteering-foodbank-poor-people.jpg') }}"
+                            class="custom-text-box-image img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="custom-text-box">
+                            <h2 class="mb-2">Our Story</h2>
+
+                            <h5 class="mb-3">Plasma Donation, Non-Profit Organization</h5>
+
+                            <p class="mb-0">This is a sample website build for ibm internship with anna university.
+                                You can feel free to use it. . Thank
+                                you.</p>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="custom-text-box mb-lg-0">
+                                    <h5 class="mb-3">Our Mission</h5>
+
+                                    <p>To Reduce the searching time for plasma which is needed in remote location.</p> 
+
+                                    <ul class="custom-list mt-2">
+                                        <li class="custom-list-item d-flex">
+                                            <i class="bi-check custom-text-box-icon me-2"></i>
+                                            Non-Profit
+                                        </li>
+
+                                        <li class="custom-list-item d-flex">
+                                            <i class="bi-check custom-text-box-icon me-2"></i>
+                                            Volunteer
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                           
+
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about-section section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-5 col-12">
+                        <img src="{{ url_for('static', filename= 'images/portrait-volunteer-who-organized-donations-charity.jpg') }}"
+                            class="about-image ms-lg-auto bg-light shadow-lg img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-5 col-md-7 col-12">
+                        <div class="custom-text-block">
+                            <h2 class="mb-0">Admin Information</h2>
+
+                            <p class="text-muted mb-lg-4 mb-md-4">Founding Partner</p>
+
+                            <p>Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito Professional
+                                charity theme based</p>
+
+                            <p>Sed leo nisl, posuere at molestie ac, suscipit auctor mauris. Etiam quis metus</p>
+
+                            <ul class="social-icon mt-4">
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-twitter"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-facebook"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-instagram"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section section-padding section-bg">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+
+                    <div class="col-lg-5 col-12 ms-auto">
+                        <h2 class="mb-0">Make an impact. <br> Save lives.</h2>
+                    </div>
+
+                    <div class="col-lg-5 col-12">
+                        <a href="#" class="me-4">Make a donation</a>
+
+                        <a href="#section_4" class="custom-btn btn smoothscroll">Become a volunteer</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        
+        <section class="volunteer-section section-padding" id="section_4">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12">
+                        <h2 class="text-white mb-4">Register</h2>
+
+                        <form class="custom-form volunteer-form mb-5 mb-lg-0" action="#" method="post" role="form">
+                            <h3 class="mb-4">Become a volunteer today</h3>
+
+                            <div class="row">
+                                <div class="col-lg-6 col-12">
+                                    <input type="text" name="volunteer-name" id="volunteer-name" class="form-control"
+                                        placeholder="Jack Doe" required>
+                                </div>
+
+                                <div class="col-lg-6 col-12">
+                                    <input type="email" name="volunteer-email" id="volunteer-email"
+                                        pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Jackdoe@gmail.com"
+                                        required>
+                                </div>
+
+                                <div class="col-lg-6 col-12">
+                                    <input type="number" name="volunteer-subject" id="volunteer-subject"
+                                        class="form-control" placeholder="Mobile No." required>
+                                </div>
+
+                                <div class="col-lg-6 col-12">
+                                    <div class="input-group input-group-file">
+                                        <input type="file" class="form-control" id="inputGroupFile02">
+
+                                        <label class="input-group-text" for="inputGroupFile02">Upload your Health Certificate</label>
+
+                                        <i class="bi-cloud-arrow-up ms-auto"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <textarea name="volunteer-message" rows="3" class="form-control" id="volunteer-message"
+                                placeholder="Your Address"></textarea>
+
+                            <button type="submit" class="form-control">Submit</button>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <img src="{{ url_for('static', filename= 'images/smiling-casual-woman-dressed-volunteer-t-shirt-with-badge.jpg') }}"
+                            class="volunteer-image img-fluid" alt="">
+
+                        <div class="custom-block-body text-center">
+                            <h4 class="text-white mt-lg-3 mb-lg-3">About Volunteering</h4>
+
+                            <p class="text-white">You simply need to Register your details like name, contact details, Heath certificate, blood group,in the registration form and Simple wait for a request message. When a patient near you needs a plasma you will get notified via email or a phone call.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+     
+        <section class="contact-section section-padding" id="section_6">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-12 ms-auto mb-5 mb-lg-0">
+                        <div class="contact-info-wrap">
+                            <h2>Get in touch</h2>
+
+                            <div class="contact-image-wrap d-flex flex-wrap">
+                                <img src="{{ url_for('static', filename= 'images/avatar/pretty-blonde-woman-wearing-white-t-shirt.jpg') }}"
+                                    class="img-fluid avatar-image" alt="">
+
+                                <div class="d-flex flex-column justify-content-center ms-3">
+                                    <p class="mb-0">Scarlet Jhonson</p>
+                                    <p class="mb-0"><strong>Admin Controller</strong></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info">
+                                <h5 class="mb-3">Contact Infomation</h5>
+
+                                <p class="d-flex mb-2">
+                                    <i class="bi-geo-alt me-2"></i>
+                                    Chennai, India
+                                </p>
+
+                                <p class="d-flex mb-2">
+                                    <i class="bi-telephone me-2"></i>
+
+                                    <a href="tel: 9876543210">
+                                        +91-9876543210
+                                    </a>
+                                </p>
+
+                                <p class="d-flex">
+                                    <i class="bi-envelope me-2"></i>
+
+                                    <a href="mailto:info@yourgmail.com">
+                                        donate@plasma.org
+                                    </a>
+                                </p>
+
+                                <a href="#" class="custom-btn btn mt-3">Get Direction</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-12 mx-auto">
+                        <form class="custom-form contact-form" action="#" method="post" role="form">
+                            <h2>Request form</h2>
+
+                            <p class="mb-4">Or, you can just send an email:
+                                <a href="#">infoplasma@charity.org</a>
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <input type="text" name="first-name" id="first-name" class="form-control"
+                                        placeholder="Jack" required>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <input type="text" name="last-name" id="last-name" class="form-control"
+                                        placeholder="Doe" required>
+                                </div>
+                            </div>
+
+                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
+                                placeholder="Jackdoe@gmail.com" required>
+
+                            <textarea name="message" rows="5" class="form-control" id="message"
+                                placeholder="What can we help you?"></textarea>
+
+                            <button type="submit" class="form-control">Send Message</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12 mb-4">
+                    <img src="{{ url_for('static', filename= 'images/logo.png') }}" class="logo img-fluid" alt="logo">
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <h5 class="site-footer-title mb-3">Quick Links</h5>
+
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Our Story</a></li>
+
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Newsroom</a></li>
+
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Causes</a></li>
+
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Become a volunteer</a></li>
+
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Partner with us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mx-auto">
+                    <h5 class="site-footer-title mb-3">Contact Infomation</h5>
+
+                    <p class="text-white d-flex mb-2">
+                        <i class="bi-telephone me-2"></i>
+
+                        <a href="tel: 9876543210" class="site-footer-link">
+                            +91-9876543210
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <i class="bi-envelope me-2"></i>
+
+                        <a href="mailto:info@yourgmail.com" class="site-footer-link">
+                            donate@plasma.org
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex mt-3">
+                        <i class="bi-geo-alt me-2"></i>
+                        Chennai, India.
+                    </p>
+
+                    <a href="#" class="custom-btn btn mt-3">Get Direction</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-7 col-12">
+                        <p class="copyright-text mb-0">Copyright © 2023 <a href="#">Plasma</a> Donor Org.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-center align-items-center mx-auto">
+                        <ul class="social-icon">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-twitter"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-facebook"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-instagram"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-linkedin"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-youtube"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    
+    <script src="{{ url_for('static', filename= 'js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename= 'js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename= 'js/jquery.sticky.js') }}"></script>
+    <script src="{{ url_for('static', filename= 'js/click-scroll.js') }}"></script>
+    <script src="{{ url_for('static', filename= 'js/counter.js') }}"></script>
+    <script src="{{ url_for('static', filename= 'js/custom.js') }}"></script>
+
+</body>
+
+</html>
