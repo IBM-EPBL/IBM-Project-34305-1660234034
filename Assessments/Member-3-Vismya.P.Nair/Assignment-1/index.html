@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assests/css/styles.css">
+</head>
+<body>
+    <!-- first page content -->
+    <div class="forbgi" style="background-image:url(./assests/images/banner.jpg) ;">
+        <div class="navbar">
+            <div class="navbar-left">
+                <h1>Sowmiya</h1>
+                <h3>/ Student</h3>
+            </div>
+            <div class="navbar-right">
+                <div> <button class="btn"><a href="#contact">Contact</a></button>
+                </div>
+            </div>
+        </div>
+        <!-- content of the profile -->
+        <div class="content">
+            <div class="profile-image" >
+                <img id="profile-pic" src="./assests/images/profile-pic.jpeg" alt="Sowmiya Full Sixe Profile pic">
+                <h1>Sowmiya R</h1>
+            </div>
+            <div class="profile-wordings">
+                <h1 id="hello">Hello</h1>
+                <br>
+                <h2>
+                    Here's is who I am & What I do
+                </h2>
+                <br>
+                <p>
+                    I have experience in HTML, CSS, and JavaScript. Gained experience by myself in front-end web development, I am confident & I have the skills to handle work pressure. During my university mini project, I gained hands-on experience coding websites and applications.
+                </p>
+    
+            </div>
+        </div>
+    </div>
+    
+    <!-- second page content -->
+    <div class="contact-pg" style="background-image:url(./assests/images/banner-1.jpg) ;">
+        <h1>Contact Me</h1>
+        <div class="forms">
+            <section class="contact" id="contact">
+                <h2 class="section-title">Contact Details:</h2>
+        
+                <div class="contact__container bd-grid">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">EMAIL</h3>
+                        <span class="contact__text">sowmiyaramesh026@gmail.com</span>
+                        <br>
+                        <br>
+                        <h3 class="contact__subtitle">PHONE</h3>
+                        <span class="contact__text">9876543210</span>
+                        <br>
+                        <br>
+                        <h3 class="contact__subtitle">ADDRESS</h3>
+                        <span class="contact__text">Chennai, India.</span>
+                    </div>
+        
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" id="inp1" placeholder="Your Name" class="contact__input"> <br>
+                            <input type="mail" id="inp2" placeholder="Your Email" class="contact__input">
+                        </div>
+        
+                        <textarea name="" id="txtarea" cols="0" rows="10" class="contact__input" placeholder="Enter the message..."></textarea>
+                        <br>
+                        <input type="submit" value="Enter" onclick = "app" class="btn"> 
+                    </form>
+                </div>
+            </section> 
+           
+        </div>
+    
+    </div>
+    
+</body>
+<script>
+    function app(){
+           alert("Submitted your Form");
+    }
+</script>
+</html>
