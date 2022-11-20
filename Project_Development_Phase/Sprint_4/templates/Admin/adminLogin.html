@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename= 'dist/assets/css/adminloginstyle.css') }}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+</head>
+
+<body>
+ 
+
+<div id="form">
+  <div class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-md-8 col-md-offset-2">
+      <div id="userform">
+       
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+          
+          <li><a href="#"  role="tab" data-toggle="tab"> Admin Login</a></li>
+        </ul>
+        <br>
+          <div class="tab-pane fade in" id="login">
+            <form id="login">
+              <div class="form-group">
+                <label> Your Email<span class="req">*</span> </label>
+                <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address." autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+              <br>
+              <div class="form-group">
+                <label> Password<span class="req">*</span> </label>
+                <input type="password" class="form-control" id="password" required data-validation-required-message="Please enter your password" autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div> 
+              <br>
+              <div class="mrgn-30-top">
+                <button type="submit" class="btn btn-larger btn-block">
+                <a class="viola" href="/adminindex">LOG IN</a>
+                </button>
+              </div>
+            </form>
+          </div>
+          
+
+        </div>
+        <center>
+    
+          <div class="admin-btn">
+              <button class="btn-admin" type="/adminLogin"> <a href="/login">User Login</a></button>
+          </div> 
+        </center>
+      </div>
+      
+        
+    </div>
+  </div>
+  
+ 
+  
+</div>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+  <!-- <script src="./assets/js/loginscript.js"></script> -->
+  <script src="{{ url_for('static', filename= 'dist/assets/js/loginscript.js') }}"></script>
+
+
+</body>
+</html>
