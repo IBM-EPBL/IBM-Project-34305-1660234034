@@ -8,8 +8,8 @@ engine = create_engine('sqlite://',
                        echo = False)
 
 dsn_hostname = "2d46b6b4-cbf6-40eb-bbce-6251e6ba0300.bs2io90l08kqb1od8lcg.databases.appdomain.cloud"
-dsn_uid = "#"
-dsn_pwd = "#"
+dsn_uid = "zzd89111"
+dsn_pwd = "p7PccD5sBH1chhAO"
 
 dsn_driver = "{IBM DB2 ODBC DRIVER}"
 dsn_database = "BLUDB"
@@ -59,6 +59,10 @@ def login():
 @app.route("/home")
 def home():
     return render_template('index.html')
+
+@app.route("/login1")
+def home1():
+    return render_template('login.html')
 
 @app.route("/AdminLogin",  methods=['GET', 'POST'])
 def adminlogin():
